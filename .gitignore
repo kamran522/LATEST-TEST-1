@@ -1,0 +1,7 @@
+node_modules/
+lib/session/
+config.env
+bot.db
+*.db
+chatMemory.json
+*.log
