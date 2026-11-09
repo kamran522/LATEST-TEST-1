@@ -145,9 +145,9 @@ const {
       if (_0x4f7768 === "connecting") {
         console.log("Connecting...");
       } else if (_0x4f7768 === "open") {
-        await _0x19b4db();
+        // External plugins are intentionally disabled in the focused media bot.
         console.log("Connected.");
-        _0x14500f.readdirSync("./plugins").filter(_0x462a1a => _0x274d54.extname(_0x462a1a) === ".js").forEach(_0x406e9a => require("./plugins/" + _0x406e9a));
+        ["downloader.js", "converters.js", "_app.js", "_menu.js"].forEach(_0x406e9a => require("./plugins/" + _0x406e9a));
         var _0x52f7b6 = "*X BOT MD STARTED!*\n\n_Mode: " + _0x40480d.WORK_TYPE + "_\n_Prefix: " + _0x40480d.HANDLERS + "_\n_Version: " + _0x40480d.VERSION + "_\n_Menu Type: " + _0x40480d.MENU_TYPE + "_\n_Language: " + _0x40480d.LANGUAGE + "_\n\n*Extra Configurations*\n\n```Always online: " + (_0x40480d.ALWAYS_ONLINE ? "✅" : "❌") + "\nAuto status view: " + (_0x40480d.AUTO_STATUS_VIEW ? "✅" : "❌") + "\nAuto reject calls: " + (_0x40480d.REJECT_CALLS ? "✅" : "❌") + "\nAuto read messages: " + (_0x40480d.READ_MESSAGES ? "✅" : "❌") + "\nAuto call blocker: " + (_0x40480d.CALL_BLOCK ? "✅" : "❌") + "\nAuto status save: " + (_0x40480d.SAVE_STATUS ? "✅" : "❌") + "\nAuto status reply: " + (_0x40480d.STATUS_REPLY ? "✅" : "❌") + "\nAuto status reaction: " + (_0x40480d.STATUS_REACTION ? "✅" : "❌") + "\nLogs: " + (_0x40480d.LOGS ? "✅" : "❌") + "\nPM Blocker: " + (_0x40480d.PM_BLOCK ? "✅" : "❌") + "\nPM Disabler: " + (_0x40480d.DISABLE_PM ? "✅" : "❌") + "```";
         var _0x4657fa = (_0x40480d.SUDO !== "" ? _0x40480d.SUDO.split(",")[0] : _0x55b8e5.user.id.split(":")[0]) + "@s.whatsapp.net";
         if (_0x40480d.START_MSG) {
